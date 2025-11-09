@@ -48,9 +48,9 @@ fun ContactImage(contact: Contact) {
             Image(
                 painter = rememberAsyncImagePainter(
                     Builder(LocalContext.current).data(
-                    data = "https://i.pinimg.com/originals/70/4b/9c/704b9c9137801a6a63d5df2003f2b38d.jpg"
+                    data = Constants.Contact.DEFAULT_AVATAR_URL
                 ).apply(block = { -> crossfade(true) }).build()),
-                contentDescription = "Фото контакта",
+                contentDescription = Constants.Contact.CONTACT_IMAGE_DESCRIPTION,
                 modifier = Modifier
                     .size(120.dp)
                     .background(Color.LightGray),
