@@ -63,7 +63,7 @@ class MainActivity : ComponentActivity() {
 
 @Preview(showBackground = true, name = "Избранный контакт")
 @Composable
-fun ContactDetailsPreview1() {
+private fun ContactDetailsPreview1() {
     Column(modifier = Modifier.fillMaxSize()) {
         Surface(
             color = colorResource(id = R.color.custom_blue_100),
@@ -101,7 +101,7 @@ fun ContactDetailsPreview1() {
 
 @Preview(showBackground = true, name = "Обычный контакт")
 @Composable
-fun ContactDetailsPreview2() {
+private fun ContactDetailsPreview2() {
     Column(modifier = Modifier.fillMaxSize()) {
         Surface(
             color = colorResource(id = R.color.custom_blue_100),
