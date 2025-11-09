@@ -57,7 +57,7 @@ fun ContactDetails(contact: Contact) {
                 Spacer(modifier = Modifier.size(8.dp))
                 Icon(
                     painter = painterResource(id = android.R.drawable.star_big_on),
-                    contentDescription = "Избранный",
+                    contentDescription = stringResource(R.string.chosen_one),
                     tint = Color.Yellow,
                     modifier = Modifier.size(24.dp)
                 )
